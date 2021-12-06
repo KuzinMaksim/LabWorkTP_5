@@ -73,7 +73,7 @@ namespace LabWorkTP_5
 
         private void textBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            Regex regex = new Regex (@"[A-Za-z]");
+            Regex regex = new Regex (@"[А-яа-я]");
             if (!regex.IsMatch(e.Text))
                 e.Handled = true;
         }
