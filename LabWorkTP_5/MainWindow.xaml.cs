@@ -72,12 +72,10 @@ namespace LabWorkTP_5
 
         private void mainButton_Click(object sender, RoutedEventArgs e)
         {
-            //var box = sender as ComboBox;
             label.Content += " " + comboBox.SelectedItem.ToString();
             foreach (var item in stackPanel.Children.OfType<RadioButton>())
                 if ((bool)item.IsChecked)
                     label.Content += " " + item.Content.ToString();
-            //var box1 = sender as ListBox;
             label.Content += " " + listBox.SelectedItem.ToString();
             mainButton.IsEnabled = false;
 
