@@ -80,6 +80,7 @@ namespace LabWorkTP_5
 
         private void checkBox1_Checked(object sender, RoutedEventArgs e)
         {
+
             editButton.IsEnabled = true;
         }
 

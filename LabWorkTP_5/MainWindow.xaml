@@ -21,7 +21,7 @@
         </GroupBox>
         <ListBox HorizontalAlignment="Left" Height="100" Margin="577,49,0,0" VerticalAlignment="Top" Width="100" Name="listBox" SelectionChanged="listBox_SelectionChanged"/>
         <ScrollViewer Margin="0,331,0,0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            <Label HorizontalAlignment="Left" Margin="173,270,0,0" VerticalAlignment="Top" Width="419" Name="label"/>
+            <Label HorizontalAlignment="Left" Margin="173,0,0,0" VerticalAlignment="Top" Name="label"/>
         </ScrollViewer>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="577,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="textBox" PreviewTextInput="textBox_PreviewTextInput"/>
         <Button Content="Добавить" HorizontalAlignment="Left" Margin="577,260,0,0" VerticalAlignment="Top" Width="50" Name="addButton" Click="addButton_Click"/>
