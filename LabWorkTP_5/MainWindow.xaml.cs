@@ -36,25 +36,6 @@ namespace LabWorkTP_5
             listBox.Items.Add("глубоко");
         }
 
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var box = sender as ComboBox;
-            label.Content +=" "+ box.SelectedItem.ToString();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            foreach (var item in stackPanel.Children.OfType<RadioButton>())
-                if ((bool)item.IsChecked)
-                    label.Content += " " + item.Content.ToString();
-        }
-
-        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var box = sender as ListBox;
-            label.Content += " " + box.SelectedItem.ToString();
-        }
-
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
             listBox.Items.Add(textBox.Text);
@@ -87,6 +68,29 @@ namespace LabWorkTP_5
         private void checkBox2_Checked(object sender, RoutedEventArgs e)
         {
             editTextBox.Opacity = 1;
+        }
+
+        private void mainButton_Click(object sender, RoutedEventArgs e)
+        {
+            //var box = sender as ComboBox;
+            label.Content += " " + comboBox.SelectedItem.ToString();
+            foreach (var item in stackPanel.Children.OfType<RadioButton>())
+                if ((bool)item.IsChecked)
+                    label.Content += " " + item.Content.ToString();
+            //var box1 = sender as ListBox;
+            label.Content += " " + listBox.SelectedItem.ToString();
+            mainButton.IsEnabled = false;
+
+        }
+
+        private void checkBox1_Unchecked(object sender, RoutedEventArgs e)
+        {
+            editButton.IsEnabled = false;
+        }
+
+        private void checkBox2_Unchecked(object sender, RoutedEventArgs e)
+        {
+            editTextBox.Opacity = 0;
         }
     }
 }

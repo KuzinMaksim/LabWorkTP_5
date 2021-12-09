@@ -7,19 +7,17 @@
         mc:Ignorable="d"
         Title="Студент получает знания" Height="450" Width="800">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="39,49,0,0" VerticalAlignment="Top" Width="120"  Name="comboBox" SelectionChanged="comboBox_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="39,49,0,0" VerticalAlignment="Top" Width="120"  Name="comboBox"/>
         <GroupBox Header="Существительное" HorizontalAlignment="Left" Height="118" Margin="311,49,0,0" VerticalAlignment="Top" Width="115" Name="groupBox" >
-            <StackPanel x:Name="stackPanel">
+            <StackPanel x:Name="stackPanel" Margin="0,0,0,1">
                 <RadioButton Content="дом"/>
                 <RadioButton Content="река"/>
                 <RadioButton Content="кошка"/>
                 <RadioButton Content="собака"/>
                 <RadioButton Content="мышь"/>
-                <Button Content="Добавить" Click="Button_Click"/>
-
             </StackPanel>   
         </GroupBox>
-        <ListBox HorizontalAlignment="Left" Height="100" Margin="577,49,0,0" VerticalAlignment="Top" Width="100" Name="listBox" SelectionChanged="listBox_SelectionChanged"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="577,49,0,0" VerticalAlignment="Top" Width="100" Name="listBox" />
         <ScrollViewer Margin="0,331,0,0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
             <Label HorizontalAlignment="Left" Margin="173,0,0,0" VerticalAlignment="Top" Name="label"/>
         </ScrollViewer>
@@ -28,8 +26,8 @@
         <Button Content="Удалить" HorizontalAlignment="Left" Margin="644,260,0,0" VerticalAlignment="Top" Width="53" Name="delButton" Click="delButton_Click"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="577,232,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Name="editTextBox" Opacity="0"/>
         <Button Content="Изменить" HorizontalAlignment="Left" Margin="602,306,0,0" VerticalAlignment="Top" Width="75" Name="editButton" Click="editButton_Click" IsEnabled="False"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="92,260,0,0" VerticalAlignment="Top" Name="checkBox1" Checked="checkBox1_Checked"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="92,294,0,0" VerticalAlignment="Top" Name="checkBox2" Checked="checkBox2_Checked"/>
-        <Button Content="Составить предложение" HorizontalAlignment="Left" Margin="293,260,0,0" VerticalAlignment="Top" Width="146" Name="mainButton"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="92,260,0,0" VerticalAlignment="Top" Name="checkBox1" Checked="checkBox1_Checked" Unchecked="checkBox1_Unchecked"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="92,294,0,0" VerticalAlignment="Top" Name="checkBox2" Checked="checkBox2_Checked" Unchecked="checkBox2_Unchecked"/>
+        <Button Content="Составить предложение" HorizontalAlignment="Left" Margin="293,260,0,0" VerticalAlignment="Top" Width="146" Name="mainButton" Click="mainButton_Click"/>
     </Grid>
 </Window>
