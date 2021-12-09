@@ -30,5 +30,6 @@
         <Button Content="Изменить" HorizontalAlignment="Left" Margin="602,306,0,0" VerticalAlignment="Top" Width="75" Name="editButton" Click="editButton_Click" IsEnabled="False"/>
         <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="92,260,0,0" VerticalAlignment="Top" Name="checkBox1" Checked="checkBox1_Checked"/>
         <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="92,294,0,0" VerticalAlignment="Top" Name="checkBox2" Checked="checkBox2_Checked"/>
+        <Button Content="Составить предложение" HorizontalAlignment="Left" Margin="293,260,0,0" VerticalAlignment="Top" Width="146" Name="mainButton"/>
     </Grid>
 </Window>
